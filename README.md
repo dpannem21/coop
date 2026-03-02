@@ -1,12 +1,6 @@
        /\~~/\
        \ -_-/
-        ""v"               
-  ___ ___ | ___  _ __  
- / __/ _ \ / _ \| '_ \ 
-| (_| (_) | (_) | |_) |
- \___\___/ \___/| .__/ 
-                | |    
-                |_|    
+        ""v"              
 
 Welcome to Coop -_-
 
@@ -22,35 +16,34 @@ Setup:
 2) python3 -m pip install pyyaml
 
 3) Ollama Setup
-a) Download one of the [recommended models](https://docs.ollama.com/integrations/claude-code#recommended-models) for Claude Code.
 
-b) Adjust [context length](https://docs.ollama.com/context-length). Recommended to set to at least 32k for Claude Code.
+    a) Download one of the [recommended models](https://docs.ollama.com/integrations/claude-code#recommended-models) for Claude Code.
 
-c) ollama run <model>
-   - coop will use the locally running instance of Ollama 
+    b) Adjust [context length](https://docs.ollama.com/context-length). Recommended to set to at least 32k for Claude Code.
+
+    c) ollama run <model>
+    - coop will use the locally running instance of Ollama 
 
 4) Coop Setup
-a) vi .env
-   - CLAUDE=<path_to_.claude>
-   - mount this directory so that session history can be persisted 
 
-b) vi custom-volumes.txt
-   - add paths to any directories you want Claude Code to have
-     access to. 
-   - the directories are added to the docker compose before bringup
-     and removed once bringup is done.
+    a) vi .env
+        - CLAUDE=<path_to_.claude>
+        - mount this directory so that session history can be persisted 
 
-c) chmod +x ./coop.sh
+    b) vi custom-volumes.txt
+        - add paths to any directories you want Claude Code to have access to. 
+        - the directories are added to the docker compose before bringup and removed once bringup is done.
 
-d) ./coop.sh 
-   --build : builds the sandbox / container
-   --up    : brings up the container, logs you into the shell
-   --down  : brings down the container
+    c) chmod +x ./coop.sh
 
-e) claude --model <model running in Ollama>
-   - launch Claude Code in the sandbox 
+    d) ./coop.sh 
+        --build : builds the sandbox / container
+        --up    : brings up the container, logs you into the shell
+        --down  : brings down the container
+
+    e) claude --model <model running in Ollama>
+        - launch Claude Code in the sandbox 
 
 Next Steps:
 - introduce support for OpenClaw
-- introduce multi-container setup to run multiple agents
-  in truly isolated environments
+- introduce multi-container setup to run multiple agents in truly isolated environments
