@@ -7,6 +7,9 @@ Welcome to Coop -_-
 This is a sandbox for Claude Code
 with prompt-injection detection 
 
+V1.0:
+Allows you to spin up Claude Code in a containerized and isolated environment that out-of-the-box has prompt injection detection from [@Lasso](https://github.com/lasso-security/claude-hooks) configured. Claude Code can't see any files on your personal machine unless you grant access by specifying the file paths in custom-volumes.txt 
+
 Setup:
 1) Install required softwares
 - [Docker](https://www.docker.com/get-started/)

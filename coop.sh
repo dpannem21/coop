@@ -18,9 +18,9 @@ if [ "$BUILD" = true ]; then
 fi
 
 if [ "$UP" = true ]; then
-  python3 inject-volumes.py locollama.yml --inject
+  python3 utilities/inject-volumes.py locollama.yml --inject
   if docker compose -f "locollama.yml" up -d; then
-    python3 inject-volumes.py locollama.yml --eject
+    python3 utilities/inject-volumes.py locollama.yml --eject
     docker exec -it coop bash -c "cd /root && exec bash"
   else
     echo "docker compose up failed — compose file left with injected mounts"

@@ -44,7 +44,7 @@ def write_compose(path, data):
 def is_claude_mount(mapping):
     # keep mappings that reference the CLAUDE variable or the .claude path
     s = mapping or ""
-    return ("${CLAUDE}" in s) or ("$CLAUDE" in s) or (".claude" in s.lower())
+    return ("${CLAUDE}" in s)
 
 
 def do_inject(compose):
