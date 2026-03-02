@@ -1,0 +1,16 @@
+
+
+       /\~~/\
+       \ -_-/
+        ""v"               
+  ___ ___ | ___  _ __  
+ / __/ _ \ / _ \| '_ \ 
+| (_| (_) | (_) | |_) |
+ \___\___/ \___/| .__/ 
+                | |    
+                |_|    
+
+Welcome to Coop -_-
+
+This is a sandbox for Claude Code
+with prompt-injection detection 
