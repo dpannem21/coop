@@ -47,6 +47,14 @@ Setup:
     e) claude --model <model running in Ollama>
         - launch Claude Code in the sandbox 
 
+
+<img width="904" height="748" alt="image" src="https://github.com/user-attachments/assets/965046d1-8484-436d-a733-e425b50e2a01" />
+
+
+*Testing the prompt-injection detection from Lasso
+<img width="1274" height="1708" alt="image" src="https://github.com/user-attachments/assets/889f9720-67f0-4293-9258-d63f69955338" />
+
+
 Next Steps:
 - introduce support for OpenClaw
 - introduce multi-container setup to run multiple agents in truly isolated environments
